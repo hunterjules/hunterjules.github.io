@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Jules Hunter</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Century Gothic", Arial, sans-serif;
+            color: #fff;
+            background-color: #1a3c34;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header, footer {
+            background-color: #133029;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        h1, h2 {
+            color: #9ad0c0;
+        }
+
+        nav {
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+        nav a {
+            color: #9ad0c0;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .content {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 40px;
+            max-width: 1200px;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .contact-image {
+            flex: 1;
+            max-width: 400px;
+        }
+
+        .contact-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .contact-list {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-card {
+            background-color: #133029;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .contact-card i {
+            font-size: 20px;
+            color: #9ad0c0;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .contact-details a {
+            color: #9ad0c0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Jules Hunter</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="newhobbies.html">Hobbies</a>
+        <a href="detailed-education.html">Detailed Education</a>
+        <a href="projects.html">Projects</a>
+    </nav>
+
+    <main class="content">
+        <!-- Contact Image -->
+        <div class="contact-image">
+            <img src="Content/contactphoto.jpg" alt="Jules Hunter Profile Picture">
+        </div>
+
+        <!-- Contact Details -->
+        <div class="contact-list">
+            <!-- Email Card -->
+            <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <div class="contact-details">
+                    <span>Email:</span>
+                    <a href="mailto:jhunter2@seattleu.edu">jhunter2@seattleu.edu</a>
+                </div>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="contact-card">
+                <i class="fas fa-phone"></i>
+                <div class="contact-details">
+                    <span>Phone:</span>
+                    <a href="tel:+18588609071">+1 (858) 860-9071</a>
+                </div>
+            </div>
+
+            <!-- LinkedIn Card -->
+            <div class="contact-card">
+                <i class="fab fa-linkedin"></i>
+                <div class="contact-details">
+                    <span>LinkedIn:</span>
+                    <a href="https://www.linkedin.com/in/hunterjules" target="_blank">www.linkedin.com/in/hunterjules</a>
+                </div>
+            </div>
+
+            <!-- GitHub Card -->
+            <div class="contact-card">
+                <i class="fab fa-github"></i>
+                <div class="contact-details">
+                    <span>GitHub:</span>
+                    <a href="https://github.com/hunterjules" target="_blank">github.com/hunterjules</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>2024 Jules Hunter</p>
+    </footer>
+
+</body>
+</html>

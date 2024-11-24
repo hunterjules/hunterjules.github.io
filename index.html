@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jules Hunter - Personal Webpage</title>
+    <style>
+        body {
+            font-family: "Century Gothic", Arial, sans-serif;
+            color: #fff;
+            background-color: #1a3c34;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header, footer {
+            background-color: #133029;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+        h1, h2 {
+            color: #9ad0c0;
+        }
+        nav {
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+        nav a {
+            color: #9ad0c0;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+        }
+        .main-content {
+            flex: 3;
+            padding: 20px;
+        }
+        .main-content a {
+            color: #9ad0c0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .main-content a:hover {
+            text-decoration: underline;
+        }
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background-color: #133029;
+            border-radius: 5px;
+            margin-left: 20px;
+            text-align: center;
+        }
+        .sidebar a {
+            color: #9ad0c0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            margin-top: 30px;
+            border: 2px solid #9ad0c0;
+        }
+        .item-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Jules Hunter</h1>
+        <p>Student/Software Developer</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="newhobbies.html">Hobbies</a>
+	<a href="detailed-education.html">Detailed Education</a>
+        <a href="projects.html">Projects</a>
+
+    </nav>
+
+    <div class="container">
+        <div class="main-content">
+            <h2>Education</h2>
+            <div class="item-row">
+                <p><strong>Bachelor of Science in Computer Science and Mathematics</strong><br>
+                Seattle University</p>
+                <p>Sept. 2021 - Expected June 2025</p>
+            </div>
+            <ul>
+                <li>Double Major in Computer Science and Mathematics, GPA 3.6</li>
+                <li>See <a href="#">Detailed Education</a> for coursework information</li>
+            </ul>
+
+            <h2>Work Experience</h2>
+            <div class="item-row">
+                <p><strong>Research Assistant, Computational Neuroscience</strong> - Seattle University</p>
+                <p>Sept. 2024 - Present</p>
+            </div>
+            <ul>
+                <li>Simulating electrical activity in neurons using an Adaptive Exponential Integrate and Fire neuron model for the purposes of using simulation-based inference (SBI) and a neural netowrk to replicate results.</li>
+                <li>Serving as an undergraduate researcher under Dr. Brian Fischer, assisting with programming and testing.</li>
+                <li>Developed and tested two functions extracting important information about the neuron's firing patterns and integrated them into a single function that can be used by a neural network to conduct SBI.</li>
+                <li>Built using Python (matplotlib, scikit-learn, numpy, sbi) with Jupyter Notebook, implementing machine learning (clustering algorithms), simulation-based inference, and data visualization.</li>
+                <li>Soft skills: academic writing, time management (WFH job)</li>
+            </ul>
+
+            <div class="item-row">
+                <p><strong>Software Engineer, Capstone Project</strong> - KiloWatts for Humanity</p>
+                <p>Sept. 2024 - Present</p>
+            </div>
+            <ul>
+                <li>Building a web application that models business cases for sustainable off-grid electrical systems in developing countries.</li>
+                <li>Developer on a team of 4 working on the backend application net energy calculation scripts, and integrating them with the frontend.</li>
+                <li>Implemented the basic application that allows a user to upload a CSV file containing irradiance, temperature, and load data, and generates a graph of the energy generated by the solar array.</li>
+                <li>Coding in JavaScript using React for the frontend and in Python using a Flask app for the backend, using Visual Studio for development and GitHub for version control.</li>
+                <li>Soft skills: teamwork, professionalism.</li>
+            </ul>
+
+            <div class="item-row">
+                <p><strong>Math Tutor</strong> - Seattle University Math Lab</p>
+                <p>Sept. 2023 - Present</p>
+            </div>
+            <ul>
+                <li>Tutoring students in various undergraduate math courses, inlcuding algebra, calculus (differential, integral, series, and multivariable), differential equations, and linear algebra.</li>
+                <li>Member of a team of 6-8 people taking shifts throughout the school week to staff the Math Lab for drop-in tutoring.</li>
+                <li>Solved problems and explained solutions to around 40 students per month with math, promoting a community space.</li>
+                <li>Taught using Mathematica, developing skill in technical communication, leadership, and adaptability.</li>
+            </ul>
+
+            <div class="item-row">
+                <p><strong>Teaching Aide, Math for K-8 Teachers</strong> - Seattle University</p>
+                <p>Jan. 2023 - Apr. 2023</p>
+            </div>
+            <ul>
+                <li>Offered supplemental material and drop-in tutoring for a university course on Mathematics for K-8 Teachers.</li>
+            </ul>
+
+            <div class="item-row">
+                <p><strong>Elementary Math Tutor</strong> - Bailey Gatzert Elementary School</p>
+                <p>Sept. 2022 - Dec. 2022</p>
+            </div>
+            <ul>
+                <li>Aided students in grades 2 and 3 weekly with elementary math concepts and homework problems.</li>
+                <li>Organized lesson plans through coordination with parents and teachers weekly.</li>
+                <li>Skills: Virtual classroom, youth mentoring</li>
+            </ul>
+
+            <div class="item-row">
+                <p><strong>Barista</strong> - Starbucks</p>
+                <p>Jun. 2022 - Sept. 2022</p>
+            </div>
+            <ul>
+                <li>Handled POS system including card reader, receipts, and tracking customer rewards.</li>
+                <li>Operated a cash register including emptying and transporting cash for closing shifts.</li>
+                <li>Practiced a variety of coffee brewing techniques incl. cold brew and manual espresso machine.</li>
+                <li>Memorized recipes for a variety of specific coffee and tea drinks.</li>
+                <li>Catered to customer requests with a friendly attitude.</li>
+            </ul>
+
+            <div class="item-row">
+                <p><strong>Aerial Acrobatics Instructor</strong> - San Diego UNITED Training Center</p>
+                <p>Jun. 2017 - Apr. 2020</p>
+            </div>
+            <ul>
+                <li>Taught aerial acrobatics skills on silks, lyra, and hammock to children ages 7-16 and adults 16+</li>
+                <li>Organized and produced 1-2 hr. performances showcasing student skills yearly.</li>
+            </ul>
+
+
+        </div>
+
+        <aside class="sidebar">
+            <img src="Content/profile.png" alt="Profile Picture" class="profile-picture">
+            <h2>About Me</h2>
+	    <a href="#">[Click for Resume]</a>
+            <p>I am a student pursuing a Bachelor of Science degree in Computer Science and Mathematics at Seattle University. I'm currently working with Dr. Brian Fischer on his research in computational neuroscience, simulating electrical activity in neurons using an Adaptive Exponential Integrate and Fire neuron model.</p>
+            <p>我会说一点儿汉语。我刚刚通过了HSK三级考试 (I can speak some Mandarin; I recently passed the HSK 3 exam).</p>
+
+            <h2>Interests</h2>
+            <p>Large language models</p>
+            <p>Renewable energy</p>
+            <p>Web development</p>
+        </aside>
+    </div>
+
+    <footer>
+        <p>2024 Jules Hunter</p>
+    </footer>
+
+</body>
+</html>
