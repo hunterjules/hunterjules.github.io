@@ -68,25 +68,78 @@
             border-radius: 8px;
             margin-bottom: 15px;
     	    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	    position: relative;
 	    overflow: hidden;
+	    height: 30px;
+	    transition: all 0.3s ease;
         }
+
         .course-panel h4 {
             color: #9ad0c0;
             margin: 0;
+            transition: all 0.3s ease;
         }
+
         .course-panel p {
-            margin: 5px 0 0 0;
+            margin: 0;
             color: #e0e0e0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
         }
-	.course-panel:hover {
-	    transform: scale(1.05);
-	    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-	}
+
+        .course-panel:hover {
+            height: auto;
+            padding: 15px;
+            transform: scale(1.05);
+        }
+
+        .course-panel:hover p {
+            opacity: 1;
+        }
+
+        .course-panel.expanded {
+            height: auto;
+            padding: 15px;
+        }
+        .course-panel.expanded p {
+            opacity: 1;
+        }
+
 
         .item-row {
             display: flex;
             justify-content: space-between;
             margin-bottom: 10px;
+        }
+
+
+        /* Mobile Configuration */
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
+            nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                margin: 5px 0;
+            }
+            .content {
+                padding: 10px;
+            }
+            .course-columns {
+                flex-direction: column;
+            }
+            .column {
+                margin: 10px 0;
+                padding: 10px;
+            }
+            .course-panel {
+                height: auto;
+                padding: 15px;
+            }
         }
 
     </style>
@@ -101,7 +154,7 @@
         <a href="index.html">Home</a>
         <a href="contact.html">Contact</a>
         <a href="newhobbies.html">Hobbies</a>
-        <a href="detailed-education.html">Detailed Education</a>
+        <a href="detailed-education.html">Education</a>
         <a href="projects.html">Projects</a>
 
     </nav>
@@ -135,53 +188,53 @@
             <div class="column">
                 <h3>Computer Science Courses</h3>
 
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Data Structures</h4>
-                    <p class="short-description">Introduction to data organization and manipulation, covering trees, graphs, and linked lists using C++.</p>
+                    <p>Introduction to data organization and manipulation, covering trees, graphs, and linked lists using C++.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Algorithms</h4>
-                    <p class="short-description">Focus on algorithm design, complexity analysis, and optimization techniques.</p>
+                    <p>Focus on algorithm design, complexity analysis, and optimization techniques.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Databases</h4>
-                    <p class="short-description">Fundamentals of database design, including SQL and relational database management systems.</p>
+                    <p>Fundamentals of database design, including SQL and relational database management systems.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Object-Oriented Development</h4>
-                    <p class="short-description">Study of object-oriented programming principles and software design patterns in C++.</p>
+                    <p>Study of object-oriented programming principles and software design patterns in C++.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Computer Networks</h4>
-                    <p class="short-description">Overview of networking protocols, architectures, and the internet structure. Coursework done in C++ and C.</p>
+                    <p>Overview of networking protocols, architectures, and the internet structure. Coursework done in C++ and C.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Computer Graphics</h4>
-                    <p class="short-description">Introduction to rendering, modeling, and visualization techniques, using C++, OpenGL, and GLSL.</p>
+                    <p>Introduction to rendering, modeling, and visualization techniques, using C++, OpenGL, and GLSL.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Languages and Computation</h4>
-                    <p class="short-description">Exploration of the foundations of computation, focusing on formal languages, automata theory, and the limits of what can be computed. Coursework done using Python and F#.</p>
+                    <p>Exploration of the foundations of computation, focusing on formal languages, automata theory, and the limits of what can be computed. Coursework done using Python and F#.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Intro to computing using Python</h4>
-                    <p class="short-description">A beginner-friendly introduction to computer programming and problem-solving using Python, emphasizing algorithmic thinking and software development basics.</p>
+                    <p>A beginner-friendly introduction to computer programming and problem-solving using Python, emphasizing algorithmic thinking and software development basics.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Computing using C++</h4>
-                    <p class="short-description">Development of foundational programming skills in C++, focusing on algorithms, data structures, and memory management.</p>
+                    <p>Development of foundational programming skills in C++, focusing on algorithms, data structures, and memory management.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Assembly</h4>
-                    <p class="short-description">Study of low-level programming with assembly language, covering computer architecture, instruction sets, and hardware-level computation.</p>
+                    <p>Study of low-level programming with assembly language, covering computer architecture, instruction sets, and hardware-level computation.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Technical Communications and Project Management</h4>
-                    <p class="short-description">Practical approaches to technical writing, presentations, and effective project management techniques in software development and engineering contexts.</p>
+                    <p>Practical approaches to technical writing, presentations, and effective project management techniques in software development and engineering contexts.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Software Engineering & Project Development 1</h4>
-                    <p class="short-description">Project development course supplementing the senior capstone project for computer science majors.</p>
+                    <p>Project development course supplementing the senior capstone project for computer science majors.</p>
                 </div>
 
             </div>
@@ -189,110 +242,110 @@
             <div class="column">
                 <h3>Mathematics Courses</h3>
 
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Linear Algebra</h4>
-                    <p class="short-description">Study of vector spaces, linear transformations, and matrix theory.</p>
+                    <p>Study of vector spaces, linear transformations, and matrix theory.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Applied Fourier Analysis</h4>
-                    <p class="short-description">Exploration of Fourier series, transforms, and applications in signal processing.</p>
+                    <p>Exploration of Fourier series, transforms, and applications in signal processing.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Probability</h4>
-                    <p class="short-description">Introduction to probability models, random variables, distributions, and the mathematical foundations of uncertainty.</p>
+                    <p>Introduction to probability models, random variables, distributions, and the mathematical foundations of uncertainty.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Abstract Algebra 1</h4>
-                    <p class="short-description">Exploration of groups, rings, and fields with an emphasis on symmetry, structure, and mathematical rigor.</p>
+                    <p>Exploration of groups, rings, and fields with an emphasis on symmetry, structure, and mathematical rigor.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Real Analysis 1</h4>
-                    <p class="short-description">Rigorous treatment of limits, continuity and differentiation, focusing on mathematical proof techniques (Epsilon-Delta).</p>
+                    <p>Rigorous treatment of limits, continuity and differentiation, focusing on mathematical proof techniques (Epsilon-Delta).</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Differential Equations</h4>
-                    <p class="short-description">Study of ordinary differential equations, their applications, and methods of solving them analytically and numerically.</p>
+                    <p>Study of ordinary differential equations, their applications, and methods of solving them analytically and numerically.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Calculus 1</h4>
-                    <p class="short-description">Study of rates of change, slopes of curves, and optimization using differential calculus techniques.</p>
+                    <p>Study of rates of change, slopes of curves, and optimization using differential calculus techniques.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Calculus 2</h4>
-                    <p class="short-description">Exploration of antiderivatives, area under curves, and applications of definite and indefinite integrals.</p>
+                    <p>Exploration of antiderivatives, area under curves, and applications of definite and indefinite integrals.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Calculus 3</h4>
-                    <p class="short-description">Analysis of convergence, divergence, and power series expansions with applications in mathematical modeling.</p>
+                    <p>Analysis of convergence, divergence, and power series expansions with applications in mathematical modeling.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Multivariable Calculus</h4>
-                    <p class="short-description">Extension of calculus to higher dimensions, focusing on partial derivatives, multiple integrals, and vector calculus.</p>
+                    <p>Extension of calculus to higher dimensions, focusing on partial derivatives, multiple integrals, and vector calculus.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Intro to Advanced Mathematics - Proofs</h4>
-                    <p class="short-description">Introduction to logical reasoning, proof techniques, and mathematical rigor, preparing students for advanced theoretical courses.</p>
+                    <p>Introduction to logical reasoning, proof techniques, and mathematical rigor, preparing students for advanced theoretical courses.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Mathematical Communication & Reasoning</h4>
-                    <p class="short-description">Development of mathematical communication skills, including technical writing in LaTeX and collaborative problem-solving techniques.</p>
+                    <p>Development of mathematical communication skills, including technical writing in LaTeX and collaborative problem-solving techniques.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Senior Synthesis 1</h4>
-                    <p class="short-description">Practical training in mathematical research methodologies and effective communication of results through written and oral presentations.</p>
+                    <p>Practical training in mathematical research methodologies and effective communication of results through written and oral presentations.</p>
                 </div>
             </div>
 
             <div class="column">
                 <h3>Other Courses</h3>
 
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Geographic Information Systems (GIS)</h4>
-                    <p class="short-description">Introduction to spatial data analysis, mapping, and geographic modeling using ArcGIS Pro and ArcGIS Online.</p>
+                    <p>Introduction to spatial data analysis, mapping, and geographic modeling using ArcGIS Pro and ArcGIS Online.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Physics - Mechanics</h4>
-                    <p class="short-description">Study of forces, motion, and energy, exploring fundamental principles like Newton's laws, conservation laws, and dynamics.s</p>
+                    <p>Study of forces, motion, and energy, exploring fundamental principles like Newton's laws, conservation laws, and dynamics.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Introduction to Ethics - Sophia University</h4>
-                    <p class="short-description">Examination of major ethical theories and their application to moral questions, focusing on classical and contemporary perspectives.</p>
+                    <p>Examination of major ethical theories and their application to moral questions, focusing on classical and contemporary perspectives.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Issues in Chinese History - Sophia University</h4>
-                    <p class="short-description">Survey of Chinese history, emphasizing cultural, political, and societal changes in the 19th and 20th centuries.</p>
+                    <p>Survey of Chinese history, emphasizing cultural, political, and societal changes in the 19th and 20th centuries.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Indigenous Religions - Sophia University</h4>
-                    <p class="short-description"> Examination of indigenous belief systems, practices, and their role in shaping cultural identities across the globe.</p>
+                    <p> Examination of indigenous belief systems, practices, and their role in shaping cultural identities across the globe.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>World Geography - Sophia University</h4>
-                    <p class="short-description">Exploration of physical and human geography, including cartography, geopolitics, and environmental systems.</p>
+                    <p>Exploration of physical and human geography, including cartography, geopolitics, and environmental systems.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Horror & Social Difference</h4>
-                    <p class="short-description">Analysis of horror films as cultural texts, focusing on themes of social difference, marginalization, and societal fears.</p>
+                    <p>Analysis of horror films as cultural texts, focusing on themes of social difference, marginalization, and societal fears.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Representing Animals</h4>
-                    <p class="short-description">Critical examination of how animals are depicted in film, exploring themes of personification, ethics, and human-animal relationships.</p>
+                    <p>Critical examination of how animals are depicted in film, exploring themes of personification, ethics, and human-animal relationships.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Intro to Creative Writing</h4>
-                    <p class="short-description">Introduction to creative writing through poetry, emphasizing form, language, and self-expression.</p>
+                    <p>Introduction to creative writing through poetry, emphasizing form, language, and self-expression.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Poverty & Migration</h4>
-                    <p class="short-description">Exploration of U.S.-Mexico border policy and its impact on immigration and poverty.</p>
+                    <p>Exploration of U.S.-Mexico border policy and its impact on immigration and poverty.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>World Religions & Catholicism</h4>
-                    <p class="short-description"> Comparative study of Catholicism and global religious traditions, focusing on theological, cultural, and ethical dimensions.</p>
+                    <p> Comparative study of Catholicism and global religious traditions, focusing on theological, cultural, and ethical dimensions.</p>
                 </div>
-                <div class="course-panel" onclick="toggleExpand(this)">
+                <div class="course-panel">
                     <h4>Philosophy of the Human Person</h4>
-                    <p class="short-description">Exploration of philosophical questions about consciousness, identity, and human nature, blending historical and modern approaches.</p>
+                    <p>Exploration of philosophical questions about consciousness, identity, and human nature, blending historical and modern approaches.</p>
                 </div>
             </div>
         </div>
@@ -302,5 +355,27 @@
         <p>2024 Jules Hunter</p>
     </footer>
 
+<script>
+    // for mobile-friendly toggle
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const coursePanels = document.querySelectorAll(".course-panel");
+
+        coursePanels.forEach((panel) => {
+            panel.addEventListener("click", () => {
+		// check if already expanded
+		const isExpanded = panel.classList.contains("expanded");
+		
+		// collapse all panels
+		coursePanels.forEach((panelAgain) => panelAgain.classList.remove("expanded"));
+		
+		// expand the new one
+		if (!isExpanded) {
+		    panel.classList.add("expanded");
+		}
+            });
+        });
+    });
+</script>
 </body>
 </html>

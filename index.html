@@ -34,13 +34,17 @@
             text-decoration: none;
             font-weight: bold;
         }
+	
+	/* all content */
         .container {
             display: flex;
             max-width: 1200px;
             width: 100%;
             padding: 20px;
         }
-        .main-content {
+
+	/* left side: main content */
+        .main-content { 
             flex: 3;
             padding: 20px;
         }
@@ -53,7 +57,9 @@
         .main-content a:hover {
             text-decoration: underline;
         }
-        .sidebar {
+
+	/* right side: sidebar */
+        .sidebar { 
             flex: 1;
             padding: 20px;
             background-color: #133029;
@@ -83,6 +89,21 @@
             justify-content: space-between;
             margin-bottom: 10px;
         }
+	
+	/* mobile config */
+	@media (max-width: 768px) {
+    	    .container {
+                flex-direction: column; /* stack content vertically */
+    	    }
+    	    .sidebar {
+        	width: 100%; /* sidebar takes full width */
+        	margin-left: 0; /* remove left margin */
+        	order: -1; /* move the sidebar above the content */
+    	    }
+    	    .main-content {
+        	width: 100%; /* main content takes full width */
+    	    }
+	}
     </style>
 </head>
 <body>
@@ -96,7 +117,7 @@
         <a href="index.html">Home</a>
         <a href="contact.html">Contact</a>
         <a href="newhobbies.html">Hobbies</a>
-	<a href="detailed-education.html">Detailed Education</a>
+	<a href="detailed-education.html">Education</a>
         <a href="projects.html">Projects</a>
 
     </nav>
@@ -120,7 +141,7 @@
                 <p>Sept. 2024 - Present</p>
             </div>
             <ul>
-                <li>Simulating electrical activity in neurons using an Adaptive Exponential Integrate and Fire neuron model for the purposes of using simulation-based inference (SBI) and a neural netowrk to replicate results.</li>
+                <li>Simulating electrical activity in neurons using an Adaptive Exponential Integrate and Fire model, simulation-based inference (SBI), and a neural netowrk.</li>
                 <li>Serving as an undergraduate researcher under Dr. Brian Fischer, assisting with programming and testing.</li>
                 <li>Developed and tested two functions extracting important information about the neuron's firing patterns and integrated them into a single function that can be used by a neural network to conduct SBI.</li>
                 <li>Coding in Python (matplotlib, scikit-learn, numpy, sbi) with Jupyter Notebook, implementing machine learning (clustering algorithms), simulation-based inference, and data visualization.</li>
@@ -165,7 +186,7 @@
             <ul>
                 <li>Aided students in grades 2 and 3 weekly with elementary math concepts and homework problems.</li>
                 <li>Organized lesson plans through coordination with parents and teachers weekly.</li>
-                <li>Skills: Virtual classroom, youth mentoring</li>
+                <li>Skills: Virtual classroom, youth mentoring.</li>
             </ul>
 
             <div class="item-row">
@@ -185,7 +206,7 @@
                 <p>Jun. 2017 - Apr. 2020</p>
             </div>
             <ul>
-                <li>Taught aerial acrobatics skills on silks, lyra, and hammock to children ages 7-16 and adults 16+</li>
+                <li>Taught aerial acrobatics skills on silks, lyra, and hammock to children ages 7-16 and adults 16+.</li>
                 <li>Organized and produced 1-2 hr. performances showcasing student skills yearly.</li>
             </ul>
 
@@ -196,13 +217,13 @@
             <img src="Content/profile.png" alt="Profile Picture" class="profile-picture">
             <h2>About Me</h2>
 	    <a href="Content/SoftwareResumeNov.pdf" target="_blank" class="view-pdf-link">[Click for Resume]</a>
-            <p>I am a student pursuing a Bachelor of Science degree in Computer Science and Mathematics at Seattle University. I'm currently working with Dr. Brian Fischer on his research in computational neuroscience, simulating electrical activity in neurons using an Adaptive Exponential Integrate and Fire neuron model.</p>
+            <p>I am a student pursuing a Bachelor of Science degree in Computer Science and Mathematics at Seattle University. I'm currently working with Dr. Brian Fischer on his research in computational neuroscience, simulating electrical activity in neurons using an Adaptive Exponential Integrate and Fire neuron model. In school, I am part of a project team working for KiloWatts for Humanity as a software engineer, as part of the Seattle University senior capstone program.</p>
             <p>我会说一点儿汉语。我刚刚通过了HSK三级考试 (I can speak some Mandarin; I recently passed the HSK 3 exam).</p>
 
             <h2>Interests</h2>
-            <p>Large language models</p>
+            <p>Large Language Models (LLMs)</p>
             <p>Renewable energy</p>
-            <p>Web development</p>
+            <p>Graphical Information Systems (GIS)</p>
         </aside>
     </div>
 

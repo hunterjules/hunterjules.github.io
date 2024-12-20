@@ -44,7 +44,6 @@
             align-items: center;
         }
 
-	/* Hobby Panel Styling */
 	.hobby-panel {
             background-color: #133029;
 	    border-radius: 10px;
@@ -100,14 +99,15 @@
 	    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 	}
 	
+	/* image carousel */
 	.carousel {
 	    position: relative;
 	    display: flex;
 	    flex-direction: column;
 	    align-items: center;
 	    justify-content: center;
-	    width: 400px; /* Set a fixed size for consistency */
-	    height: 450px; /* Adjust height as needed */
+	    width: 400px; /* fixed size for consistency */
+	    height: 450px;
 	    overflow: hidden;
 	    border-radius: 10px;
 	    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -116,7 +116,7 @@
 	.carousel img {
 	    width: 100%;
 	    height: 100%;
-	    object-fit: cover; /* Ensures images are cropped to fit */
+	    object-fit: cover; /* ensures images are cropped to fit */
 	    transition: opacity 0.3s ease-in-out;
 	}
 	
@@ -136,7 +136,7 @@
 	    border: none;
 	    border-radius: 50%;
 	    cursor: pointer;
-	    width: 40px; /* Size of the button */
+	    width: 40px; /* size of the button */
    	    height: 40px;
 	    font-size: 20px;
 	    display: flex;
@@ -158,6 +158,41 @@
 	.right-arrow {
 	    right: 10px;
 	}
+
+	/* mobile config */
+	@media (max-width: 768px) {
+    		body {
+        	    font-size: 14px; /* smaller text for mobile screens */
+        	    padding: 10px;
+    		}
+
+    		.hobby-panel {
+        	    flex-direction: column; /* stack items vertically */
+       	 	    align-items: center;
+        	    text-align: center;
+    		}
+
+    		.hobby-images {
+        	    width: 100%; /* ensure images scale properly */
+        	    margin-bottom: 20px;
+    		}
+
+    		.carousel {
+        	    width: 100%; /* make the carousel fill the screen width */
+        	    height: auto; /* adjust height proportionally */
+    		}
+
+    		.arrow {
+        	    font-size: 16px; /* smaller arrows for mobile */
+        	    width: 30px;
+        	    height: 30px;
+    		}
+
+    		.hobby-text {
+        	    padding: 0;
+    		}
+	}
+
 		
     </style>
 </head>
@@ -171,7 +206,7 @@
         <a href="index.html">Home</a>
         <a href="contact.html">Contact</a>
         <a href="newhobbies.html">Hobbies</a>
-        <a href="detailed-education.html">Detailed Education</a>
+        <a href="detailed-education.html">Education</a>
         <a href="projects.html">Projects</a>
 
     </nav>
@@ -230,22 +265,6 @@
 	    </div>
         </section>
 
-        <!-- Other -->
-        <section class="hobby-panel">
-            <div class="hobby-text">
-                <h2>Other fun stuff</h2>
-                <p>I was going to create a card for baking, but I don't have many pictures of my creations. Let's say I value flavor over aesthetics. So here are some fun things I've been up to recently as of 2024.</p>
-            </div>
-            <div class="hobby-images">
-	        <div class="carousel">
-	     	    <button class="arrow left-arrow"><i class="fas fa-chevron-left"></i></button>
-	     	    <img src="Content/Hobbies/comicCon24.jpg" alt="ComicCon 2024" class="carousel-image">
-	     	    <button class="arrow right-arrow"><i class="fas fa-chevron-right"></i></button>
-    		    <p class="carousel-caption">ComicCon 2024</p>
-
-	        </div>
-	    </div>
-        </section>
     </main>
 
     <footer>
@@ -254,30 +273,31 @@
 
 <script>
     document.querySelectorAll('.carousel').forEach((carousel, index) => {
-    	// Define image sets and captions for each hobby
+    	// define image sets and captions for each hobby
     	const images = [
     	    ['Content/Hobbies/chinese-class.png', 'Content/Hobbies/myChineseNotebook.jpg', 'Content/Hobbies/italki24-10.png'], // Mandarin images
     	    ['Content/Hobbies/hiking.jpg', 'Content/Hobbies/hiking2.jpg', 'Content/Hobbies/caveInCalifornia.jpg', 'Content/Hobbies/exit38.jpg'],    // Hiking images
-    	    ['Content/Hobbies/aerial.jpg', 'Content/Hobbies/aerial2.jpg'],        // Aerial images
-    	    ['Content/Hobbies/comicCon24.jpg', 'Content/Hobbies/copernicusCake.jpg', 'Content/Hobbies/tulipFestival.jpg']        // Other images
+    	    ['Content/Hobbies/aerial.jpg', 'Content/Hobbies/aerial2.jpg']        // Aerial images
     	];
 	
 	const captions = [
             ["Practicing Mandarin vocabulary on Italki", "My Chinese notebook", "Italki progress report, October 2024"],
             ["Hiking in Tiger Mountain State Forest", "Ho Chi Minh trail in La Jolla", "Chumash Painted Cave State Historic Park", "Exploring the forest off I-90"],
-            ["Photography from Wonderland Showcase", "Photography from Wonderland Showcase"],
-            ["ComicCon 2024", "Copernicus Cake", "Tulip Festival"]
+            ["Photography from Wonderland Showcase", "Photography from Wonderland Showcase"]
         ];
 
+	// keep track of index
     	let currentIndex = 0;
     	const imgElement = carousel.querySelector('.carousel-image');
         const captionElement = carousel.querySelector('.carousel-caption');
 	
+	//function to change the picture
     	const updateCarousel = () => {
     	    imgElement.src = images[index][currentIndex];
             captionElement.textContent = captions[index][currentIndex];
     	};
 	
+	//listen for clicks
     	carousel.querySelector('.left-arrow').addEventListener('click', () => {
    	     currentIndex = (currentIndex === 0) ? images[index].length - 1 : currentIndex - 1;
    	     updateCarousel();
