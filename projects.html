@@ -17,11 +17,17 @@
 
         header, footer {
             background-color: #133029;
-            padding: 20px;
+            padding: 10px;
             text-align: center;
             width: 100%;
         }
-
+	header h1 {
+ 	    font-size: 22px; 
+	    margin-bottom: 5px;
+	}
+	header p {
+	    font-size: 14px; 
+	}
         h1, h2 {
             color: #9ad0c0;
         }
@@ -40,7 +46,7 @@
         }
 
         .content {
-            max-width: 1200px;
+            max-width: 1000px;
             padding: 20px;
             display: flex;
             flex-direction: column;
@@ -49,7 +55,7 @@
 
         .project-card {
             background-color: #133029;
-            border-radius: 10px;
+            border-radius: 5px;
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             display: flex;
@@ -81,7 +87,7 @@
             width: 150px;
             height: 150px;
             object-fit: cover;
-            border-radius: 10px;
+            border-radius: 5px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
 
@@ -94,9 +100,9 @@
 
         .project-links {
             display: flex;
-            flex-direction: column; /* links are stacked vertically */
-            gap: 10px; /* space between the links */
-            margin-left: 170px; /* aligns links with images */
+            flex-direction: column; 
+            gap: 10px; 
+            margin-left: 170px; 
         }
 
         .project-links a {
@@ -123,14 +129,15 @@
 
     <header>
         <h1>Projects</h1>
+	<p> </p>
     </header>
 
     <nav>
         <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="newhobbies.html">Hobbies</a>
-        <a href="detailed-education.html">Education</a>
         <a href="projects.html">Projects</a>
+	<a href="detailed-education.html">Education</a>
+        <a href="newhobbies.html">Hobbies</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
     <main class="content">

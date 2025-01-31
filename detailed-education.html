@@ -16,10 +16,18 @@
         }
         header, footer {
             background-color: #133029;
-            padding: 20px;
+            padding: 10px;
             text-align: center;
             width: 100%;
         }
+	header h1 {
+ 	    font-size: 22px; 
+	    margin-bottom: 5px;
+	}
+	header p {
+	    font-size: 14px; 
+	}
+
         h1, h2 {
             color: #9ad0c0;
         }
@@ -35,7 +43,7 @@
             font-weight: bold;
         }
         .content {
-            max-width: 1200px;
+            max-width: 1000px;
             padding: 20px;
             display: flex;
             flex-direction: column;
@@ -45,7 +53,7 @@
             max-width: 1200px;
             background-color: #133029;
             padding: 15px;
-            border-radius: 8px;
+            border-radius: 5px;
             margin-bottom: 20px;
         }
         .education-panel h2 {
@@ -65,7 +73,7 @@
         .course-panel {
             background-color: #133029;
             padding: 10px;
-            border-radius: 8px;
+            border-radius: 5px;
             margin-bottom: 15px;
     	    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 	    position: relative;
@@ -148,21 +156,20 @@
 
     <header>
         <h1>Detailed Education</h1>
+	<p> </p>
     </header>
 
     <nav>
         <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="newhobbies.html">Hobbies</a>
-        <a href="detailed-education.html">Education</a>
         <a href="projects.html">Projects</a>
-
+	<a href="detailed-education.html">Education</a>
+        <a href="newhobbies.html">Hobbies</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
     <main class="content">
         <!-- Education Panel -->
         <div class="education-panel">
-            <h2>Education</h2>
             <div class="item-row">
                 <p><strong>Bachelor of Science in Computer Science and Mathematics</strong>, Seattle University
                 <br>Sept. 2021 - Expected June 2025</p>

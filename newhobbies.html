@@ -18,10 +18,18 @@
         }
         header, footer {
             background-color: #133029;
-            padding: 20px;
+            padding: 10px;
             text-align: center;
             width: 100%;
         }
+
+	header h1 {
+ 	    font-size: 22px; 
+	}
+
+	header p {
+	    font-size: 14px; 
+	}
         h1, h2 {
             color: #9ad0c0;
         }
@@ -37,7 +45,7 @@
             font-weight: bold;
         }
         .content {
-            max-width: 1200px;
+            max-width: 1000px;
             padding: 20px;
             display: flex;
             flex-direction: column;
@@ -46,7 +54,7 @@
 
 	.hobby-panel {
             background-color: #133029;
-	    border-radius: 10px;
+	    border-radius: 5px;
 	    margin-bottom: 20px;
 	    padding: 20px;
 	    max-width: 900px;
@@ -95,7 +103,7 @@
 	.hobby-images img {
 	    width: 100%;
 	    height: auto;
-	    border-radius: 10px;
+	    border-radius: 5px;
 	    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 	}
 	
@@ -106,10 +114,10 @@
 	    flex-direction: column;
 	    align-items: center;
 	    justify-content: center;
-	    width: 400px; /* fixed size for consistency */
+	    width: 400px; 
 	    height: 450px;
 	    overflow: hidden;
-	    border-radius: 10px;
+	    border-radius: 5px;
 	    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 	}
 	
@@ -136,7 +144,7 @@
 	    border: none;
 	    border-radius: 50%;
 	    cursor: pointer;
-	    width: 40px; /* size of the button */
+	    width: 40px; 
    	    height: 40px;
 	    font-size: 20px;
 	    display: flex;
@@ -162,18 +170,18 @@
 	/* mobile config */
 	@media (max-width: 768px) {
     		body {
-        	    font-size: 14px; /* smaller text for mobile screens */
+        	    font-size: 14px; 
         	    padding: 10px;
     		}
 
     		.hobby-panel {
-        	    flex-direction: column; /* stack items vertically */
+        	    flex-direction: column; 
        	 	    align-items: center;
         	    text-align: center;
     		}
 
     		.hobby-images {
-        	    width: 100%; /* ensure images scale properly */
+        	    width: 100%; 
         	    margin-bottom: 20px;
     		}
 
@@ -183,7 +191,7 @@
     		}
 
     		.arrow {
-        	    font-size: 16px; /* smaller arrows for mobile */
+        	    font-size: 16px; 
         	    width: 30px;
         	    height: 30px;
     		}
@@ -200,15 +208,15 @@
 
     <header>
         <h1>Hobbies</h1>
+	<p> </p>
     </header>
 
     <nav>
         <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="newhobbies.html">Hobbies</a>
-        <a href="detailed-education.html">Education</a>
         <a href="projects.html">Projects</a>
-
+	<a href="detailed-education.html">Education</a>
+        <a href="newhobbies.html">Hobbies</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
     <main class="content">
@@ -219,7 +227,7 @@
                 <p>Learning Mandarin is a hobby I picked up in sophomore year of college, after a long time of being interested in the language and culture. In 2016, I visited Xi'an on an educational exchange trip, and living there with a host family broadened my perspective on the world. Learning Mandarin is a way for me to challenge myself to embrace new ideas and experiences, and to develop relationships with Chinese speakers both within the United States and abroad. </p>
 		<h3>Stats</h3>
 		
-		<p>I've been studying for 2+ years, averaging 2.5 class hours per week. I received my <a href="Content/Hobbies/hsk3-cert.pdf" target="_blank" class="view-pdf-link">HSK 3 Certification</a> in August 2024, with a score of 295/300.</p>
+		<p>I've been studying for 2+ years, regularly taking online lessons through Italki. I received my <a href="Content/Hobbies/hsk3-cert.pdf" target="_blank" class="view-pdf-link">HSK 3 Certification</a> in August 2024, with a score of 295/300.</p>
             </div>
             <div class="hobby-images">
 	        <div class="carousel">
