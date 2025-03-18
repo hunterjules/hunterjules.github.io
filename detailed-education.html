@@ -53,12 +53,28 @@
             max-width: 1200px;
             background-color: #133029;
             padding: 15px;
-            border-radius: 5px;
+            border-radius: 0px;
             margin-bottom: 20px;
         }
-        .education-panel h2 {
-            margin-bottom: 10px;
-        }
+	.education-entry {
+	    display: flex;
+	    align-items: center;
+	    gap: 15px; /* Spacing between image and text */
+	    margin-bottom: 15px; /* Adds space between education rows */
+	}
+
+	.education-panel ul {
+	    padding-left: 90px;
+	}
+	.university-logo {
+	    width: 50px;  /* Adjust size as needed */
+	    height: 50px; /* Ensures square shape */
+	    object-fit: contain; /* Keeps the aspect ratio */
+	    border-radius: 5px; /* Optional: Slightly rounded corners */
+	    background-color: #fff; /* Optional: Ensures visibility on dark backgrounds */
+	    padding: 5px; /* Optional: Adds padding inside the box */
+	}
+
         .course-columns {
             display: flex;
             flex-wrap: wrap;
@@ -73,7 +89,7 @@
         .course-panel {
             background-color: #133029;
             padding: 10px;
-            border-radius: 5px;
+            border-radius: 0px;
             margin-bottom: 15px;
     	    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 	    position: relative;
@@ -163,14 +179,13 @@
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
 	<a href="detailed-education.html">Education</a>
-        <a href="newhobbies.html">Hobbies</a>
-        <a href="contact.html">Contact</a>
     </nav>
 
     <main class="content">
         <!-- Education Panel -->
         <div class="education-panel">
-            <div class="item-row">
+            <div class="education-entry">
+		<img src="Content/su.png" alt="Seattle University Logo" class="university-logo">
                 <p><strong>Bachelor of Science in Computer Science and Mathematics</strong>, Seattle University
                 <br>Sept. 2021 - Expected June 2025</p>
             </div>
@@ -180,7 +195,8 @@
                 <li>GPA 3.6</li>
             </ul>
 
-            <div class="item-row">
+            <div class="education-entry">
+		<img src="Content/sophia.png" alt="Sophia University Logo" class="university-logo">
                 <p><strong>Study Abroad</strong>, Sophia University, Japan<br>
                 Apr. 2023 - July 2023</p>
             </div>

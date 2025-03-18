@@ -72,6 +72,24 @@
 	    margin-top: -13px; 
 	}
 
+	.skills-row {
+    	    display: flex;
+    	    flex-wrap: wrap;
+    	    gap: 10px;
+    	    margin-top: 5px;
+    	    margin-bottom: 15px;
+	}
+
+	.skill-box {
+	    background-color: #133029; 
+	    /*border: 1px solid rgba(154, 208, 192, 0.5);*/
+	    border-radius: 5px;
+	    padding: 5px 10px;
+	    font-size: 12px;
+	    color: white;
+	    font-weight: normal;
+	}
+
 
 	/* right side: sidebar */
         .sidebar { 
@@ -124,7 +142,7 @@
 
 	.contact-card {
     	    background-color: #133029;
-    	    border-radius: 10px;
+    	    border-radius: 0px;
     	    padding: 10px;
     	    display: flex;
     	    align-items: center;
@@ -189,16 +207,45 @@
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
 	<a href="detailed-education.html">Education</a>
-        <a href="newhobbies.html">Hobbies</a>
-        <a href="contact.html">Contact</a>
     </nav>
 
     <div class="container">
         <div class="main-content">
+	    <h2>Profile</h2>
+	    <p>&emsp; I am a senior at Seattle University pursuing a double major, B.S. in Computer Science and Mathematics. I grew up in San Diego, CA, and moved to Washington for college. I'm currently working on campus with Dr. Brian Fischer on his research in computational neuroscience, and tutoring undergraduate math through the Math Lab. I'm interested in transitioning to an industry position in data science, software development, or techinal communication after graduation. In my free time, I like to going on hikes in the forests east of Seattle and learning foreign languages.</p>
+
+
+
+
+
+
+
             <h2>Work Experience</h2>
+
             <div class="item-row">
-                <p><strong>Research Assistant, Computational Neuroscience</strong></p>
-                <p>Sept. 2024 - Present</p>
+                <p><strong>Software Engineer</strong></p>
+                <p>Sep 2024 - Present</p>
+            </div>
+            <p class="company-name">KiloWatts for Humanity</p>
+            <ul>
+                <li>Building a web application that models business cases for sustainable off-grid electrical systems in developing countries</li>
+                <li>Developer on a team of 4 working on the backend application and net energy calculation scripts and data storage</li>
+                <li>Implemented the basic application that allows users to upload a CSV file containing irradiance, temperature, wind, diesel, and load data, and generates a graph of the net energy</li>
+                <li>Coding in JavaScript using React for the frontend and in Python using Google Cloud suite for the backend, using Visual Studio for development and GitHub for version control</li>
+            </ul>
+	    <div class="skills-row">
+    		<span class="skill-box">JavaScript</span>
+    		<span class="skill-box">React</span>
+    		<span class="skill-box">Python</span>
+    		<span class="skill-box">Google Cloud</span>
+    		<span class="skill-box">Data Visualization</span>
+    		<span class="skill-box">Backend Development</span>
+	    </div>
+
+
+            <div class="item-row">
+                <p><strong>Research Assistant in Computational Neuroscience</strong></p>
+                <p>Sep 2024 - Present</p>
             </div>
             <p class="company-name">Seattle University</p>
             <ul>
@@ -206,12 +253,20 @@
                 <li>Serving as an undergraduate researcher under Dr. Brian Fischer, assisting with programming and testing.</li>
                 <li>Developed and tested two functions extracting important information about the neuron's firing patterns and integrated them into a single function that can be used by a neural network to conduct SBI.</li>
                 <li>Coding in Python (matplotlib, scikit-learn, numpy, sbi) with Jupyter Notebook, implementing machine learning (clustering algorithms), simulation-based inference, and data visualization.</li>
-                <li>Soft skills: academic writing, time management (WFH job).</li>
             </ul>
+	    <div class="skills-row">
+    		<span class="skill-box">Python</span>
+    		<span class="skill-box">Matplotlib</span>
+    		<span class="skill-box">Data Visualization</span>
+    		<span class="skill-box">Research</span>
+    		<span class="skill-box">Academic Writing</span>
+    		<span class="skill-box">Time management (WFH job)</span>
+	    </div>
+
 
             <div class="item-row">
-                <p><strong>Math Tutor</strong></p>
-                <p>Sept. 2023 - Present</p>
+                <p><strong>Undergraduate Math Tutor</strong></p>
+                <p>Sep 2023 - Present</p>
             </div>
             <p class="company-name">Seattle University Math Lab</p>
             <ul>
@@ -220,30 +275,61 @@
                 <li>Solved problems and explained solutions to around 40 students per month with math, promoting a community space.</li>
                 <li>Taught using Mathematica, developing skill in technical communication, leadership, and adaptability.</li>
             </ul>
+	    <div class="skills-row">
+    		<span class="skill-box">Mathematica</span>
+    		<span class="skill-box">MATLAB</span>
+    		<span class="skill-box">Technical communication</span>
+    		<span class="skill-box">Leadership</span>
+    		<span class="skill-box">Adaptability</span>
+	    </div>
+
 
             <div class="item-row">
-                <p><strong>Teaching Aide, Math for K-8 Teachers</strong></p>
-                <p>Jan. 2023 - Apr. 2023</p>
+                <p><strong>Teaching Aide in Math for K-8 Teachers</strong></p>
+                <p>Jan 2023 - Apr 2023</p>
             </div>
             <p class="company-name">Seattle University</p>
             <ul>
                 <li>Offered supplemental material and drop-in tutoring for a university course on Mathematics for K-8 Teachers.</li>
             </ul>
+	    <div class="skills-row">
+    		<span class="skill-box">K-8 Education</span>
+    		<span class="skill-box">Tutoring</span>
+	    </div>
+
+
+            <div class="item-row">
+                <p><strong>Calculus Tutor</strong></p>
+                <p>Jan 2023 - Apr 2023</p>
+            </div>
+            <p class="company-name">Seattle University LAP</p>
+
+            <ul>
+                <li>Taught Calculus 1-on-1 to undergraduate students weekly</li>
+            </ul>
+	    <div class="skills-row">
+    		<span class="skill-box">Math Tutoring</span>
+	    </div>
+
 
             <div class="item-row">
                 <p><strong>Elementary Math Tutor</strong></p>
-                <p>Sept. 2022 - Dec. 2022</p>
+                <p>Sep 2022 - Dec 2022</p>
             </div>
-            <p class="company-name">Bailey Gatzert Elementary School, SUM Corps</p>
+            <p class="company-name">SUM Corps at Bailey Gatzert Elementary School</p>
             <ul>
                 <li>Aided students in grades 2 and 3 weekly with elementary math concepts and homework problems.</li>
                 <li>Organized lesson plans through coordination with parents and teachers weekly.</li>
-                <li>Skills: Virtual classroom, youth mentoring.</li>
             </ul>
+	    <div class="skills-row">
+    		<span class="skill-box">Virtual Classroom</span>
+    		<span class="skill-box">Youth Mentoring</span>
+	    </div>
+
 
             <div class="item-row">
                 <p><strong>Barista</strong></p>
-                <p>Jun. 2022 - Sept. 2022</p>
+                <p>Jun 2022 - Sep 2022</p>
             </div>
             <p class="company-name">Starbucks</p>
 
@@ -254,30 +340,67 @@
                 <li>Memorized recipes for a variety of specific coffee and tea drinks.</li>
                 <li>Catered to customer requests with a friendly attitude.</li>
             </ul>
+	    <div class="skills-row">
+    		<span class="skill-box">Customer Service</span>
+    		<span class="skill-box">Coffee Service</span>
+    		<span class="skill-box">Cash handling</span>
+    		<span class="skill-box">POS System</span>
+	    </div>
+
+
+            <div class="item-row">
+                <p><strong>Aerial Acrobatics Private Lessons</strong></p>
+                <p>Mar 2019 - Aug 2020</p>
+            </div>
+            <p class="company-name">Self Employed</p>
+
+            <ul>
+                <li>Taught private aerial lessons for advanced fabric.</li>
+            </ul>
+	    <div class="skills-row">
+    		<span class="skill-box">Aerial Acrobatics Coaching</span>
+	    </div>
+
 
             <div class="item-row">
                 <p><strong>Aerial Acrobatics Instructor</strong></p>
-                <p>Jun. 2017 - Apr. 2020</p>
+                <p>Jun 2017 - Apr 2020</p>
             </div>
             <p class="company-name">San Diego UNITED Training Center</p>
 
             <ul>
-                <li>Taught aerial acrobatics skills on silks, lyra, and hammock to children ages 7-16 and adults 16+.</li>
+                <li>Taught aerial acrobatics skills on silks, lyra, and hammock to classes of 3-8 students, and 8+ students jointly with another instructor</li>
+		<li>children ages 7-16 and adults 16+.</li>
                 <li>Organized and produced 1-2 hr. performances showcasing student skills yearly.</li>
             </ul>
+	    <div class="skills-row">
+    		<span class="skill-box">Fabric/Silks</span>
+    		<span class="skill-box">Lyra</span>
+    		<span class="skill-box">Youth Education & Mentoring</span>
+    		<span class="skill-box">Physical Education</span>
+	    </div>
 
 
         </div>
 
         <aside class="sidebar">
-            <h2>Profile</h2>
-            <img src="Content/profile.png" alt="Profile Picture" class="profile-picture">
+            <img src="Content/profile.jpg" alt="Profile Picture" class="profile-picture">
 	    <p class="profile-caption">Jules Hunter</p>
-	    <a href="Content/HunterJulesResume1-31-25_v2.pdf" target="_blank" class="view-pdf-link">[Click for Resume]</a>
+	    <a href="Content/hunter-resume-march.pdf" target="_blank" class="view-pdf-link">[Click for Resume]</a>
 
-	    <p class="about-me">I am a senior at Seattle University pursuing a double major, B.S. in Computer Science and Mathematics. I grew up in San Diego, CA, and moved to Washington for college. I'm currently working on campus with Dr. Brian Fischer on his research in computational neuroscience, and tutoring undergraduate math through the Math Lab. I'm interested in transitioning to an industry position in data science, software development, or techinal communication after graduation. In my free time, I like to going on hikes in the forests east of Seattle and studying Mandarin Chinese.</p>
+	    <h2>Education</h2>
+            <div class="item-row">
+                <p><strong>B.S. Mathematics and Computer Science</strong><br>
+                <i>Seattle University</i><br>
+                Sept. 2021 - Expected June 2025</p>
+            </div>
+            <div class="item-row">
+                <p><strong>High School Diploma</strong><br>
+                <i>Classical Academy Online</i><br>
+                Sept. 2019 - June 2021</p>
+            </div>
+
             <h2>Contact</h2>
-	    
 	    <div class="contact-card">
 		<i class="fas fa-envelope"></i>
 		<div class="contact-details">
@@ -306,17 +429,13 @@
 		</div>
 	    </div>
 
-	    <a href="https://hunterjules.github.io/detailed-education.html"><h2>Education</h2></a>
-            <div class="item-row">
-                <p><strong>B.S. Computer Science and Mathematics</strong><br>
-                Seattle University<br>
-                Sept. 2021 - Expected June 2025</p>
-            </div>
 
             <h2>Interests</h2>
             <p>Large Language Models (LLMs)</p>
             <p>Renewable energy</p>
             <p>Graphical Information Systems (GIS)</p>
+            <p>Poetry</p>
+            <p>Baking</p>
         </aside>
     </div>
 
