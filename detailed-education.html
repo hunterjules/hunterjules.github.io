@@ -75,6 +75,32 @@
 	    padding: 5px; /* Optional: Adds padding inside the box */
 	}
 
+        .cert-panel {
+            max-width: 1200px;
+            background-color: #133029;
+            padding: 15px;
+            border-radius: 0px;
+            margin-bottom: 20px;
+        }
+	.cert-entry {
+	    display: flex;
+	    align-items: center;
+	    gap: 15px; /* Spacing between image and text */
+	    margin-bottom: 15px; /* Adds space between education rows */
+	    color: #f5f5f5;
+	}
+	.education-panel ul {
+	    padding-left: 90px;
+	}
+	.cert-logo {
+	    width: 40px;  /* Adjust size as needed */
+	    height: 40px; /* Ensures square shape */
+	    object-fit: contain; /* Keeps the aspect ratio */
+	    border-radius: 5px; /* Optional: Slightly rounded corners */
+	    background-color: #fff; /* Optional: Ensures visibility on dark backgrounds */
+	    padding: 5px; /* Optional: Adds padding inside the box */
+	}
+
         .course-columns {
             display: flex;
             flex-wrap: wrap;
@@ -187,12 +213,11 @@
             <div class="education-entry">
 		<img src="Content/su.png" alt="Seattle University Logo" class="university-logo">
                 <p><strong>Bachelor of Science in Computer Science and Mathematics</strong>, Seattle University
-                <br>Sept. 2021 - Expected June 2025</p>
+                <br>Sept. 2021 - June 2025</p>
             </div>
             <ul>
                 <li>Double Major in Computer Science and Mathematics</li>
-                <li>Specialization in Math</li>
-                <li>GPA 3.6</li>
+                <li>GPA 3.67</li>
             </ul>
 
             <div class="education-entry">
@@ -203,53 +228,61 @@
             <ul>
                 <li>Studied intercultural communications, with a focus on Chinese and Japanese history.</li>
             </ul>
-
         </div>
+
+
+        <!-- Certification Panel -->
+        <!-- <div class="cert-panel">
+            <div class="cert-entry">
+		<img src="Content/ciwa.png" alt="CIWA Logo" class="cert-logo">
+                <p><strong>汉语水平考试三级 （HSK3）</strong>, Confucius Institude of the State of Washington, Aug. 2024</p>
+            </div>
+        </div> -->
+
 
         <!-- Three-Column Course Section with Panels -->
         <div class="course-columns">
             <div class="column">
                 <h3>Computer Science Courses</h3>
-
                 <div class="course-panel">
-                    <h4>Data Structures</h4>
-                    <p>Introduction to data organization and manipulation, covering trees, graphs, and linked lists using C++.</p>
+                    <h4>Computer Graphics</h4>
+                    <p>Introduction to rendering, modeling, and visualization techniques, using C++, OpenGL, and GLSL.</p>
                 </div>
                 <div class="course-panel">
                     <h4>Algorithms</h4>
                     <p>Focus on algorithm design, complexity analysis, and optimization techniques.</p>
                 </div>
                 <div class="course-panel">
-                    <h4>Databases</h4>
-                    <p>Fundamentals of database design, including SQL and relational database management systems.</p>
-                </div>
-                <div class="course-panel">
                     <h4>Object-Oriented Development</h4>
                     <p>Study of object-oriented programming principles and software design patterns in C++.</p>
                 </div>
                 <div class="course-panel">
-                    <h4>Computer Networks</h4>
-                    <p>Overview of networking protocols, architectures, and the internet structure. Coursework done in C++ and C.</p>
-                </div>
-                <div class="course-panel">
-                    <h4>Computer Graphics</h4>
-                    <p>Introduction to rendering, modeling, and visualization techniques, using C++, OpenGL, and GLSL.</p>
+                    <h4>Databases</h4>
+                    <p>Fundamentals of database design, including SQL and relational database management systems.</p>
                 </div>
                 <div class="course-panel">
                     <h4>Languages and Computation</h4>
                     <p>Exploration of the foundations of computation, focusing on formal languages, automata theory, and the limits of what can be computed. Coursework done using Python and F#.</p>
                 </div>
                 <div class="course-panel">
-                    <h4>Intro to computing using Python</h4>
-                    <p>A beginner-friendly introduction to computer programming and problem-solving using Python, emphasizing algorithmic thinking and software development basics.</p>
+                    <h4>Computer Networks</h4>
+                    <p>Overview of networking protocols, architectures, and the internet structure. Coursework done in C++ and C.</p>
+                </div>
+                <div class="course-panel">
+                    <h4>Assembly</h4>
+                    <p>Study of low-level programming with assembly language, covering computer architecture, instruction sets, and hardware-level computation.</p>
+                </div>
+                <div class="course-panel">
+                    <h4>Data Structures</h4>
+                    <p>Introduction to data organization and manipulation, covering trees, graphs, and linked lists using C++.</p>
                 </div>
                 <div class="course-panel">
                     <h4>Computing using C++</h4>
                     <p>Development of foundational programming skills in C++, focusing on algorithms, data structures, and memory management.</p>
                 </div>
                 <div class="course-panel">
-                    <h4>Assembly</h4>
-                    <p>Study of low-level programming with assembly language, covering computer architecture, instruction sets, and hardware-level computation.</p>
+                    <h4>Intro to computing using Python</h4>
+                    <p>A beginner-friendly introduction to computer programming and problem-solving using Python, emphasizing algorithmic thinking and software development basics.</p>
                 </div>
                 <div class="course-panel">
                     <h4>Technical Communications and Project Management</h4>
@@ -259,23 +292,22 @@
                     <h4>Software Engineering & Project Development 1</h4>
                     <p>Project development course supplementing the senior capstone project for computer science majors.</p>
                 </div>
+                <div class="course-panel">
+                    <h4>Software Engineering & Project Development 2</h4>
+                    <p>Project development course supplementing the senior capstone project for computer science majors.</p>
+                </div>
+                <div class="course-panel">
+                    <h4>Software Engineering & Project Development 3</h4>
+                    <p>Project development course supplementing the senior capstone project for computer science majors.</p>
+                </div>
 
             </div>
 
             <div class="column">
                 <h3>Mathematics Courses</h3>
-
-                <div class="course-panel">
-                    <h4>Linear Algebra</h4>
-                    <p>Study of vector spaces, linear transformations, and matrix theory.</p>
-                </div>
                 <div class="course-panel">
                     <h4>Applied Fourier Analysis</h4>
                     <p>Exploration of Fourier series, transforms, and applications in signal processing.</p>
-                </div>
-                <div class="course-panel">
-                    <h4>Probability</h4>
-                    <p>Introduction to probability models, random variables, distributions, and the mathematical foundations of uncertainty.</p>
                 </div>
                 <div class="course-panel">
                     <h4>Abstract Algebra 1</h4>
@@ -286,20 +318,16 @@
                     <p>Rigorous treatment of limits, continuity and differentiation, focusing on mathematical proof techniques (Epsilon-Delta).</p>
                 </div>
                 <div class="course-panel">
+                    <h4>Probability</h4>
+                    <p>Introduction to probability models, random variables, distributions, and the mathematical foundations of uncertainty.</p>
+                </div>
+                <div class="course-panel">
                     <h4>Differential Equations</h4>
                     <p>Study of ordinary differential equations, their applications, and methods of solving them analytically and numerically.</p>
                 </div>
                 <div class="course-panel">
-                    <h4>Calculus 1</h4>
-                    <p>Study of rates of change, slopes of curves, and optimization using differential calculus techniques.</p>
-                </div>
-                <div class="course-panel">
-                    <h4>Calculus 2</h4>
-                    <p>Exploration of antiderivatives, area under curves, and applications of definite and indefinite integrals.</p>
-                </div>
-                <div class="course-panel">
-                    <h4>Calculus 3</h4>
-                    <p>Analysis of convergence, divergence, and power series expansions with applications in mathematical modeling.</p>
+                    <h4>Linear Algebra</h4>
+                    <p>Study of vector spaces, linear transformations, and matrix theory.</p>
                 </div>
                 <div class="course-panel">
                     <h4>Multivariable Calculus</h4>
@@ -314,14 +342,43 @@
                     <p>Development of mathematical communication skills, including technical writing in LaTeX and collaborative problem-solving techniques.</p>
                 </div>
                 <div class="course-panel">
+                    <h4>Calculus 3</h4>
+                    <p>Analysis of convergence, divergence, and power series expansions with applications in mathematical modeling.</p>
+                </div>
+                <div class="course-panel">
+                    <h4>Calculus 2</h4>
+                    <p>Exploration of antiderivatives, area under curves, and applications of definite and indefinite integrals.</p>
+                </div>
+
+                <div class="course-panel">
+                    <h4>Calculus 1</h4>
+                    <p>Study of rates of change, slopes of curves, and optimization using differential calculus techniques.</p>
+                </div>
+
+                <div class="course-panel">
                     <h4>Senior Synthesis 1</h4>
+                    <p>Practical training in mathematical research methodologies and effective communication of results through written and oral presentations.</p>
+                </div>
+                <div class="course-panel">
+                    <h4>Senior Synthesis 2</h4>
+                    <p>Practical training in mathematical research methodologies and effective communication of results through written and oral presentations.</p>
+                </div>
+                <div class="course-panel">
+                    <h4>Senior Synthesis 3</h4>
                     <p>Practical training in mathematical research methodologies and effective communication of results through written and oral presentations.</p>
                 </div>
             </div>
 
             <div class="column">
                 <h3>Other Courses</h3>
-
+                <div class="course-panel">
+                    <h4>Methodology of Data Science</h4>
+                    <p></p>
+                </div>
+                <div class="course-panel">
+                    <h4>Data Visualization</h4>
+                    <p></p>
+                </div>
                 <div class="course-panel">
                     <h4>Geographic Information Systems (GIS)</h4>
                     <p>Introduction to spatial data analysis, mapping, and geographic modeling using ArcGIS Pro and ArcGIS Online.</p>

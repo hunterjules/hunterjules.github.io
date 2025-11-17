@@ -71,6 +71,14 @@
 	    font-style: italic;
 	    margin-top: -13px; 
 	}
+	.company-name a {
+	    font-style: italic;
+	    font-weight: normal;
+	    color: white;
+	}
+	.company-name a:hover {
+	    text-decoration: underline;
+	}
 
 	.skills-row {
     	    display: flex;
@@ -117,7 +125,7 @@
 
         .profile-picture {
             width: 200px;
-            height: 200px;
+            height: 210px;
             border-radius: 0%;
             margin: 15px auto;
             display: block;
@@ -200,19 +208,22 @@
 
     <header>
         <h1>Jules Hunter</h1>
-        <p>Student/Software Developer</p>
+        <p>Data Engineer, Power BI Developer</p>
     </header>
 
     <nav>
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
 	<a href="detailed-education.html">Education</a>
+	<!-- <button id="theme-toggle" aria-label="Toggle dark/light mode">
+          <i class="fas fa-moon"></i>
+        </button> -->
     </nav>
 
     <div class="container">
         <div class="main-content">
 	    <h2>Profile</h2>
-	    <p>&emsp; I am a senior at Seattle University pursuing a double major, B.S. in Computer Science and Mathematics. I grew up in San Diego, CA, and moved to Washington for college. I'm currently working on campus with Dr. Brian Fischer on his research in computational neuroscience, and tutoring undergraduate math through the Math Lab. I'm interested in transitioning to an industry position in data science, software development, or techinal communication after graduation. In my free time, I like to going on hikes in the forests east of Seattle and learning foreign languages.</p>
+	    <p>&emsp; I am a data engineer working full time as a PowerBI Developer at MAQ Software. I grew up in San Diego, CA, and moved to Washington for college where I earned a B.S. in Computer Science with a double major in Mathematics from Seattle University. I'm interested in transitioning to freelance data analyst roles to afford a more flexible working schedule. In my free time, I like to going on hikes in the forests east of Seattle and learning foreign languages.</p>
 
 
 
@@ -222,11 +233,33 @@
 
             <h2>Work Experience</h2>
 
+	    <div class="item-row">
+                <p><strong>Software Data Operations Engineer</strong></p>
+                <p>Jun 2025 - Present</p>
+            </div>
+            <p class="company-name"><a href="https://www.kilowattsforhumanity.org/" target="_blank">MAQ Software</a></p>
+            <ul>
+                <li>Built and maintained PowerBI reports in Microsoft Fabric for clients in the tech sector. Utilized Git integration with Microsoft Fabric, CI/CD (deployment) pipelines </li>
+                <li>Analyzed data to provide actionable business insights</li>
+                <li>Delegated tasks to a team of two other developers</li>
+                <li>Participated in UI/UX design review</li>
+                <li>Facilitated meetings with clients to determine project scope, milestones, and provide updates on work items. </li>
+                <li>Wrote SQL queries to validate report data against upstream sources.</li>
+                <li>Implemented complex DAX logic to aggregate data values in visualizations. </li>
+                <li>Used Python to code custom visuals in Power BI. Export & source from Excel</li>
+            </ul>
+	    <div class="skills-row">
+    		<span class="skill-box">SQL</span>
+    		<span class="skill-box">Python</span>
+    		<span class="skill-box">Microsoft Power BI</span>
+    		<span class="skill-box">Microsoft Fabric</span>
+	    </div>
+
             <div class="item-row">
                 <p><strong>Software Engineer</strong></p>
-                <p>Sep 2024 - Present</p>
+                <p>Sep 2024 - Jun 2025</p>
             </div>
-            <p class="company-name">KiloWatts for Humanity</p>
+            <p class="company-name"><a href="https://www.kilowattsforhumanity.org/" target="_blank">KiloWatts for Humanity</a></p>
             <ul>
                 <li>Building a web application that models business cases for off-grid electrical systems in developing countries</li>
                 <li>Developer on a team of 4 volunteers working on backend energy calculation scripts, data storage, and system design</li>
@@ -245,9 +278,9 @@
 
             <div class="item-row">
                 <p><strong>Research Assistant in Computational Neuroscience</strong></p>
-                <p>Sep 2024 - Present</p>
+                <p>Sep 2024 - Jun 2025</p>
             </div>
-            <p class="company-name">Seattle University</p>
+            <p class="company-name"><a href="https://www.seattleu.edu/" target="_blank">Seattle University</a></p>
             <ul>
                 <li>Simulating electrical activity in neurons using an Adaptive Exponential Integrate and Fire model, simulation-based inference (SBI) to replicate the bursting frequencies of neurons at select amplitudes of injected current</li>
                 <li>Serving as an undergraduate researcher under Dr. Brian Fischer, developing and testing code to calculate, analyze, and predict burst frequency using statistical inference</li>
@@ -266,9 +299,9 @@
 
             <div class="item-row">
                 <p><strong>Undergraduate Math Tutor</strong></p>
-                <p>Sep 2023 - Present</p>
+                <p>Sep 2023 - Jun 2025</p>
             </div>
-            <p class="company-name">Seattle University Math Lab</p>
+            <p class="company-name"><a href="https://www.seattleu.edu/science-engineering/academic-departments/department-of-mathematics/math-lab/" target="_blank">Seattle University Math Lab</a></p>
             <ul>
                 <li>Tutoring students in various undergraduate math courses, inlcuding algebra, calculus (differential, integral, series, and multivariable), differential equations, and linear algebra.</li>
                 <li>Member of a team of 6-8 people taking shifts throughout the school week to staff the Math Lab for drop-in tutoring.</li>
@@ -383,20 +416,15 @@
         </div>
 
         <aside class="sidebar">
-            <img src="Content/profile.jpg" alt="Profile Picture" class="profile-picture">
+            <img src="Content/profilepic2.jpg" alt="Profile Picture" class="profile-picture">
 	    <p class="profile-caption">Jules Hunter</p>
-	    <a href="Content/hunter-resume-april.pdf" target="_blank" class="view-pdf-link">[Click for Resume]</a>
+	    <a href="Content/hunter-resume-Nov-2025.pdf" target="_blank" class="view-pdf-link">[Click for Resume]</a>
 
 	    <h2>Education</h2>
             <div class="item-row">
                 <p><strong>B.S. Mathematics and Computer Science</strong><br>
                 <i>Seattle University</i><br>
-                Sept. 2021 - Expected June 2025</p>
-            </div>
-            <div class="item-row">
-                <p><strong>High School Diploma</strong><br>
-                <i>Classical Academy Online</i><br>
-                Sept. 2019 - June 2021</p>
+                Sept. 2021 - June 2025</p>
             </div>
 
             <h2>Contact</h2>
@@ -421,25 +449,24 @@
 		</div>
 	    </div>
 
-	    <div class="contact-card">
+	    <!-- <div class="contact-card">
 		<i class="fab fa-github"></i>
 		<div class="contact-details">
 		    <a href="https://github.com/hunterjules" target="_blank">github.com/hunterjules</a>
 		</div>
-	    </div>
+	    </div> -->
 
 
             <h2>Interests</h2>
             <p>Large Language Models (LLMs)</p>
             <p>Renewable energy</p>
-            <p>Graphical Information Systems (GIS)</p>
-            <p>Poetry</p>
-            <p>Baking</p>
+            <p>Cooking</p>
+            <p>Camping</p>
         </aside>
     </div>
 
     <footer>
-        <p>2024 Jules Hunter</p>
+        <p>2025 Jules Hunter</p>
     </footer>
 
 </body>
